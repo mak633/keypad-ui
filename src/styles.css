@@ -1,0 +1,72 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  outline: 0px;
+  cursor: pointer;
+  border: 1px solid rgba(29, 28, 29, 0.3);
+  font-weight: 700;
+  background: #fff;
+  padding: 0px 12px 1px;
+  font-size: 15px;
+  border-radius: 4px;
+  height: 36px;
+  transition: all 80ms linear 0s;
+}
+
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px;
+  background: #f8f8f8;
+}
+
+.keypad {
+  display: grid;
+  margin-bottom: 2rem;
+  grid-gap: 0.5rem;
+  max-width: 0;
+}
+
+.keypad__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: #faf9f6;
+  border: 2px solid #eee;
+  border-radius: 3px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.keypad__button:hover {
+  position: relative;
+  top: 1px;
+  left: 1px;
+  border-color: #e5e5e5;
+}
+
+.keypad__button-label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.history {
+  margin-bottom: 1rem;
+}
+
+.history td,
+.history th {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.history tr:nth-child(even) {
+  background-color: #ddd;
+}
